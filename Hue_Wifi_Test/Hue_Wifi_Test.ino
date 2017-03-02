@@ -13,16 +13,16 @@ It might not work on all networks!
 */
 
 byte            mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
-// IPAddress       hueHubIP(10, 0, 0, 82);
-const char      hueUsername[] = "newdeveloper";
-const int       hueHubPort = 80;
-int             inputPin[] = { 6, 7, 8, 9 };
+IPAddress       hueHubIP(127, 0, 0, 1); // Change to IP address of Hue Bridge
+const char      hueUsername[] = "username"; // Change to Hue username
+const int       hueHubPort = 80; // Hue Web Port
+int             inputPin[] = { 5, 6, 7, 8 };
 int             pinCount = 4;
-int             pirState = LOW;
-int             val = 0;
-boolean         hueOn;
-int             hueBri;
-String          hueCmd;
+int             pirState = LOW; // we start, assuming no motion detected
+int             val = 0;  // variable for reading the pin status
+boolean         hueOn;    // on/off
+int             hueBri;   // brightness value
+String          hueCmd;   // Hue command
 int             timer = 0;
 int             lightNum = 0;
 
