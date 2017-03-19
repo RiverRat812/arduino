@@ -69,7 +69,7 @@ const char * WLAN_SSID  =    "SSID"; // cannot be longer than 32 characters! Cha
 const char  * WLAN_PASS  =    "PSK"; // Change to real PreShareKey    
 #define WLAN_SECURITY   WLAN_SEC_WPA2 // WLAN_SEC_UNSEC, WLAN_SEC_WEP, WLAN_SEC_WPA or WLAN_SEC_WPA2
 #define IDLE_TIMEOUT_MS 3000      // Amount of time to wait (in milliseconds) with no data
-const char * WEBSITE  =   "10.0.0.107"; // Change to Hue Bridge IP Address
+const char * WEBSITE  =   "127.0.0.1"; // Change to Hue Bridge IP Address
 const char      hueUsername[] = "username"; // Change to Hue username
 const byte      hueHubPort = 80; // Hue Web Port
 uint32_t        ip;
